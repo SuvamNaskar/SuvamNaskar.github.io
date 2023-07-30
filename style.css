@@ -213,6 +213,8 @@ video{
 
 #contact #pagecenter p{
   font-size: 22px;
+  display: flex;
+  align-items: center;
 }
 
 #contact hr{
@@ -221,32 +223,32 @@ video{
 
 #contact #sec2{
   display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-#contact #email{
-  width: 40%;
+.btn{
+  overflow: hidden;
+  width: 12vh;
+  text-decoration: none;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
   height: 40px;
   border-radius: 30px;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-#contact #email img{
-  width: 50px;
-}
-
-#contact #linkedin{
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  height: 40px;
-  border-radius: 30px;
-}
-
-#contact #linkedin img{
-  width: 50px;
+.btn:hover{
+  font-weight: 900;
+  background-color: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
