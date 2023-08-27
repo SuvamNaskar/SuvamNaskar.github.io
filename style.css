@@ -19,7 +19,6 @@ html{
   position: fixed;
   width: 100%;
   display: flex;
-  /* background-color: black; */
   color: aliceblue;
   gap: 20px;
   align-items: center;
