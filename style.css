@@ -15,6 +15,21 @@ html{
   scroll-behavior: smooth;
 }
 
+#preloader{
+  background: url("src/preloader.webp") no-repeat center center;
+  background-position: center top;
+  margin: 12vh 0 0 0;
+  background-size: 7%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 60;
+}
+
+.blur{
+  filter: blur(5px);
+}
+
 #nav{
   position: fixed;
   width: 100%;
@@ -22,7 +37,7 @@ html{
   color: aliceblue;
   gap: 20px;
   align-items: center;
-  z-index: 99;
+  z-index: 40;
 }
 
 #nav img{
@@ -261,4 +276,17 @@ video{
               0 0 50px #03e9f4,
               0 0 200px #03e9f4;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1.5s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
 }
