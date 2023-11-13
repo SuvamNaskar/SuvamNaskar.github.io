@@ -1,0 +1,48 @@
+:root{
+    --headerText: 5vw;
+}
+
+@media screen and (max-width: 769px) {
+    #contact #pagecenter{
+        width: 60%;
+    }
+    #contact #pagecenter h2{
+        font-size: var(--headerText);
+    }
+    #contact #pagecenter{
+        gap: 40px;
+        width: 60%;
+    }
+    #contact #pagecenter p{
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+
+    #skills #pagecenter{
+        gap: 3vh;
+        width: 60%;
+    }
+    #skills #pagecenter #sec1 h2{
+        font-size: var(--headerText);
+    }
+
+    #about #pagecenter{
+        width: 60%;
+    }
+    #about #pagecenter #section1 h2{
+        font-size: var(--headerText);
+    }
+    #about #pagecenter img{
+        width: 150px;
+    }
+
+    #home h1, #home h2{
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #about #pagecenter{
+        width: 60%;
+    }
+}
