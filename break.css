@@ -1,8 +1,15 @@
 :root{
     --headerText: 5vw;
+    --bodyText: 2.5vw;
 }
 
 @media screen and (max-width: 769px) {
+    .btn{
+        width: 20vw;
+        height: 8vw;
+        font-size: var(--bodyText);
+    }
+
     #contact #pagecenter{
         width: 60%;
     }
@@ -14,7 +21,6 @@
         width: 60%;
     }
     #contact #pagecenter p{
-        font-size: 20px;
         margin-bottom: 3%;
     }
 
@@ -33,16 +39,30 @@
         font-size: var(--headerText);
     }
     #about #pagecenter img{
-        width: 150px;
+        width: 20vw;
     }
 
     #home h1, #home h2{
-        font-size: 48px;
+        font-size: var(--headerText);
+    }
+
+    #nav{
+        gap: 2vw;
+    }
+    #nav img{
+        width: 5vw;
+    }
+    #nav h2{
+        font-size: 2.7vw;
+    }
+    #nav a{
+        font-size: 1.3vw;
     }
 }
 
 @media screen and (max-width: 920px) {
     #about #pagecenter{
         width: 60%;
+        
     }
 }
