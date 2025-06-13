@@ -13,6 +13,8 @@ functions:
 
 package:
   patterns:
+    - 'index.html'
+    - 'mobile-index.html'
+    - 'public/**'
     - '!node_modules/**'
-    - '!*.zip'
     - '**'

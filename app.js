@@ -3,31 +3,37 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static('public'));
+const staticPath = path.join(__dirname, 'public');
+const rootHtml = path.join(__dirname, 'index.html');
+const mobileHtml = path.join(__dirname, 'mobile-index.html');
 
-// Middleware to detect device type
+// Serve static files from /public
+app.use(express.static(staticPath));
+
 app.get('/', (req, res) => {
-  const userAgent = req.headers['user-agent'];
+  const userAgent = req.headers['user-agent'] || '';
+  const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
 
-  const isMobileOrTablet = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
-
-  if (isMobileOrTablet) {
+  if (isMobile) {
     res.redirect('/m');
   } else {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(rootHtml);
   }
 });
 
 app.get('/m', (req, res) => {
-  const userAgent = req.headers['user-agent'];
+  const userAgent = req.headers['user-agent'] || '';
+  const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
 
-  const isMobileOrTablet = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
-
-  if (isMobileOrTablet) {
-    res.sendFile(path.join(__dirname, 'mobile-index.html'));
+  if (isMobile) {
+    res.sendFile(mobileHtml);
   } else {
     res.redirect('/');
   }
+});
+
+app.use((req, res) => {
+  res.status(404).send('Route not found.');
 });
 
 module.exports = app;
