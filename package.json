@@ -20,6 +20,7 @@
   "homepage": "https://github.com/SuvamNaskar/SuvamNaskar.github.io#readme",
   "dependencies": {
     "@vendia/serverless-express": "^4.12.6",
+    "aws-serverless-express": "^3.4.0",
     "express": "^5.1.0"
   },
   "devDependencies": {
