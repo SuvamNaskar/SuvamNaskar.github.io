@@ -12,7 +12,6 @@ functions:
       - httpApi: '*'
 
 package:
-  individually: true
   patterns:
     - public/**
     - index.html
