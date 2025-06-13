@@ -13,17 +13,17 @@
 		<script src="js/gsap-anime.js"></script>
 	</head>
 	<body class="w-2/3 mx-auto bg-black text-white font-mono font-cutive">
-		<header class="flex justify-between items-center p-6 text-sm">
+		<header class="fixed top-0 left-1/2 -translate-x-1/2 w-2/3 bg-black z-50 flex justify-between items-center p-6 text-sm shadow-md">
 			<h1 class="text-3xl">Suvam Naskar</h1>
 			<nav class="space-x-6">
-				<a href="#" class="hover:font-bold hover:text-xl">Home</a>
-				<a href="#" class="hover:font-bold hover:text-xl">GitHub</a>
-				<a href="#" class="hover:font-bold hover:text-xl">LinkedIn</a>
-				<a href="#" class="hover:font-bold hover:text-xl">Resume</a>
+				<a href="#home" class="hover:font-bold hover:text-xl">Home</a>
+				<a href="https://github.com/SuvamNaskar/" class="hover:font-bold hover:text-xl">GitHub</a>
+				<a href="https://www.linkedin.com/in/suvamnaskar/" class="hover:font-bold hover:text-xl">LinkedIn</a>
+				<a href="documents/resume.pdf" class="hover:font-bold hover:text-xl">Resume</a>
 			</nav>
 		</header>
 
-		<main class="text-white p-10 flex flex-col items-start justify-start mt-12">
+		<main class="text-white p-10 flex flex-col items-start justify-start mt-12" id="home">
 			<div class="flex flex-col md:flex-row items-end gap-0 relative ml-32">
 				
 				<!-- "Hello," - absolutely centered to left -->
@@ -120,7 +120,7 @@
 				</div>
 
 				<div class="hover:scale-110 transition-transform duration-300">
-					<h2 class="mt-6 text-3xl mb-2 underline">Schooling</h2>
+					<h2 class="mt-6 text-4xl mb-2 underline">Schooling</h2>
 					<p>Madarat Popular Academy (H.S.)</p>
 					<p>2014-2022</p>
 				</div>
@@ -135,31 +135,35 @@
 						<li class="mb-4">Fullstack | Django | AWS | EC2 | Aurora Serverless V2 | IAM | CI/CD | Internship <br> <b class="mr-4">Vigilantia Praesidium pvt. ltd.</b> - Kolkata, WB <br> (Apr 2025 - Present)</li>
 					</ul>
 				</div>
-				<div class="hover:scale-125 transition-transform duration-300">
+				<div class="exp mt-12 text-xl hover:scale-125 transform transition-transform duration-300">
 					<p>Total Experience: 1 year 8 months</p>
 				</div>
 			</div>
 		</section>
 		<section class="p-10 text-sm">
-			<h2 class="text-4xl underline">Projects</h2>
-			<ul class="list-disc pl-4">
-				<li><a href="#" class="text-blue-400 hover:underline">Project 1</a> - Description of project 1.</li>
-				<li><a href="#" class="text-blue-400 hover:underline">Project 2</a> - Description of project 2.</li>
+			<h2 class="text-4xl underline mb-2">Projects</h2>
+			<ul class="mt-4 flex gap-4">
+				<li class="w-1/2 border-2 border-white p-4 hover:bg-white hover:text-black hover:font-bold"><a href="https://github.com/SuvamNaskar/Django-ToDo" class="text-blue-400 hover:underline"><span class="text-2xl">Django Todo</span></a><span class="text-xl font-normal"> <br> Common Project but the project was deployed on AWS infrastructure. <br><span class="underline text-bold">Used Technologies:</span> Django, Docker, Cloudflare DNS, EC2, IAM, .env, CI/CD Pipeline, GitHub Actions, AWS RDS MySQL</span></li>
+				<li class="w-1/2 border-2 border-white p-4 hover:bg-white hover:text-black hover:font-bold"><a href="https://csrkmvcc.co.in/archive/2024/nirdesh/" class="text-blue-400 hover:underline"><span class="text-2xl">Nirdesh 2024</span></a><span class="text-xl font-normal"> <br> Tech-Fest and competition website <br><span class="underline text-bold">Used Technologies:</span>  HTML, CSS, PHP, JS, MySQL, XAMPP, phpMyAdmin, hostinger hPanel, Git, Github, Github and hostinger pipeline for automated deployments</span></li>
 			</ul>
-			<p class="mt-4">For more projects, visit my <a href="#" class="text-blue-400 hover:underline">GitHub</a> profile.</p>
+			<p class="mt-12 text-xl">For more projects, visit my <a href="https://github.com/SuvamNaskar" target="_blank" class="text-blue-400 hover:underline">GitHub</a> profile.</p>
+			
+			<div class="mt-12 text-lg">
+				<h2 class="text-4xl underline mb-2">Contact</h2>
+				<a href="mailto:suvamnaskar.dev@gmail.com" target="_blank">Mail: suvamnaskar.dev@gmail.com</a><br>
+				<a href="https://www.linkedin.com/in/suvamnaskar/" target="_blank">LinkedIn: suvamnaskar</a><br>
+				<a href="https://github.com/SuvamNaskar/" target="_blank">GitHub: SuvamNaskar</a><br>
+			</div>
 		</section>
 
 		<footer class="text-sm p-10 border-t border-gray-700">
-		<h2 class="text-3xl">Contact</h2>
-		<p>Mail: suvamnaskar.dev@gmail.com</p>
-		<p>LinkedIn: suvamnaskar</p>
-		<p>GitHub: SuvamNaskar</p>
-
-		<div class="mt-6 text-gray-500">
+		<div class="my-6 ml-32">
+			<p>-</p>
 			<p>This portfolio is created by Suvam Naskar,</p>
 			<p>Hosted on AWS Lambda.</p>
 			<p>Technologies used: Node.JS, Express.JS, Git, GitHub, Cloudflare, Tailwind-CSS</p>
 			<p>CI/CD Pipeline used: GitHub Actions</p>
+			<p>-</p>
 		</div>
 		</footer>
 		<script>
@@ -189,6 +193,7 @@
 					ease: "back.out(1.7)",
 					onComplete: () => {
 						document.querySelectorAll("header nav a").forEach(el => el.classList.add("glow"));
+						gsap.set(".hover\\:scale-110", { clearProps: "transform" });
 					}
 				});
 
@@ -197,7 +202,10 @@
 					duration: 2,
 					opacity: 0,
 					scale: 0.8,
-					ease: "power2.out"
+					ease: "power2.out",
+					onComplete: () => {
+						gsap.set(".hover\\:scale-110", { clearProps: "transform" });
+					}
 				});
 
 				// Slide-in info
@@ -207,7 +215,10 @@
 					opacity: 0,
 					delay: 0.5,
 					stagger: 0.3,
-					ease: "power3.out"
+					ease: "power3.out",
+					onComplete: () => {
+						gsap.set(".hover\\:scale-110", { clearProps: "transform" });
+					}
 				});
 
 				// Flicker effect for quotes
@@ -218,6 +229,23 @@
 					ease: "sine.inOut",
 					onStart: () => {
 						document.querySelector(".text-lg.mt-8").classList.add("flicker", "glow");
+					},
+					onComplete: () => {
+						gsap.set(".hover\\:scale-110", { clearProps: "transform" });
+					}
+				});
+				
+				// Flicker effect for quotes
+				gsap.from(".exp", {
+					duration: 1,
+					opacity: 0,
+					y: 20,
+					ease: "sine.inOut",
+					onStart: () => {
+						document.querySelector(".exp").classList.add("flicker", "glow");
+					},
+					onComplete: () => {
+						gsap.set(".hover\\:scale-110", { clearProps: "transform" });
 					}
 				});
 
@@ -227,7 +255,10 @@
 					x: -50,
 					opacity: 0,
 					stagger: 0.4,
-					ease: "power2.out"
+					ease: "power2.out",
+					onComplete: () => {
+						gsap.set(".hover\\:scale-110", { clearProps: "transform" });
+					}
 				});
 
 				// Scale-in cards
@@ -237,7 +268,10 @@
 					duration: 1,
 					stagger: 0.2,
 					delay: 0.5,
-					ease: "back.out(1.7)"
+					ease: "back.out(1.7)",
+					onComplete: () => {
+						gsap.set(".hover\\:scale-110", { clearProps: "transform" });
+					}
 				});
 
 				// Footer reveal
@@ -246,7 +280,10 @@
 					opacity: 0,
 					duration: 1.2,
 					delay: 1.2,
-					ease: "power2.out"
+					ease: "power2.out",
+					onComplete: () => {
+						gsap.set(".hover\\:scale-110", { clearProps: "transform" });
+					}
 				});
 			});
 		</script>
