@@ -1039,6 +1039,16 @@ video {
   text-decoration-line: underline;
 }
 
+.hover\:transition-transform:hover {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:duration-300:hover {
+  transition-duration: 300ms;
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
