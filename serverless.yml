@@ -1,0 +1,21 @@
+service: suvam-portfolio-lambda
+
+provider:
+  name: aws
+  runtime: nodejs22.x
+  region: ap-south-1  # Or your preferred AWS region
+
+functions:
+  app:
+    handler: lambda.handler
+    events:
+      - httpApi: '*'
+
+package:
+  patterns:
+    - '!node_modules/**'
+    - '!*.zip'
+    - '**'
+
+plugins:
+  - serverless-offline
