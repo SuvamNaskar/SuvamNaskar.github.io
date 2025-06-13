@@ -1,4 +1,4 @@
-service: suvam-portfolio-lambda
+service: suvam-portfolio-lambda-v2
 
 provider:
   name: aws
