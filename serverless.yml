@@ -2,7 +2,7 @@ service: suvam-portfolio-lambda
 
 provider:
   name: aws
-  runtime: nodejs22.x
+  runtime: nodejs18.x
   region: ap-south-1  # Or your preferred AWS region
 
 functions:
