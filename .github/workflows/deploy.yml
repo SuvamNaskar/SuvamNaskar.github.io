@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependencies (production only)
+        run: npm ci --omit=dev
 
       - name: Install Serverless Framework v3
         run: npm install -g serverless@3
