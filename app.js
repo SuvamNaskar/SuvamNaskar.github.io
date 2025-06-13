@@ -7,8 +7,8 @@ const staticPath = path.join(__dirname, 'public');
 const rootHtml = path.join(__dirname, 'index.html');
 const mobileHtml = path.join(__dirname, 'mobile-index.html');
 
-// Serve static files from /public
-app.use(express.static(staticPath));
+// 1. Serve static files from /public
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   const userAgent = req.headers['user-agent'] || '';
