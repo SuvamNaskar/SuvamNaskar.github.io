@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suvam Naskar - Mobile</title>
+    <link href="/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .glow {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white font-mono font-cutive">
+    <!-- Mobile Header with Hamburger Menu -->
+    <header class="w-full fixed top-0 left-0 z-50 bg-black p-4 shadow-md" x-data="{ open: false }">
+      <div class="flex justify-between items-center">
+        <h1 class="text-xl font-bold glow">Suvam Naskar</h1>
+        <button
+          class="text-white text-3xl focus:outline-none"
+          @click="open = !open"
+        >
+          &#9776;
+        </button>
+      </div>
+      <nav
+        x-show="open"
+        x-transition
+        class="flex flex-col mt-4 space-y-2 text-lg"
+      >
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="https://github.com/SuvamNaskar/" target="_blank" class="hover:underline">GitHub</a>
+        <a href="https://www.linkedin.com/in/suvamnaskar/" target="_blank" class="hover:underline">LinkedIn</a>
+        <a href="documents/resume.pdf" target="_blank" class="hover:underline">Resume</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="home" class="pt-24 px-4">
+      <div class="text-center">
+        <img
+          src="IMG_20250612_171610.jpg"
+          alt="Suvam Naskar"
+          class="mx-auto w-48 rounded shadow-md profile-image"
+        />
+        <div class="text-lg mt-4">
+          <p class="text-2xl font-bold">Suvam Naskar</p>
+          <p>20 | Jun | 2004</p>
+          <p>From Kolkata, WB, India</p>
+          <p>Based in Kolkata, WB</p>
+          <p>suvamnaskar.dev@gmail.com</p>
+          <p>+91 8348098859</p>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center text-base">
+        <p>-</p>
+        <p>Everything will be OK in the end.</p>
+        <p>if it's not OK then it's not THE END.</p>
+        <p>-</p>
+      </div>
+    </main>
+
+    <!-- Sections -->
+    <section class="px-4 py-8 space-y-8">
+      <div class="animated-section">
+        <h2 class="text-2xl underline mb-2">Personal Values</h2>
+        <ul class="list-disc pl-6">
+          <li>Responsibility</li>
+          <li>Punctuality</li>
+          <li>Innovation</li>
+          <li>Creativity</li>
+          <li>Flexibility</li>
+        </ul>
+      </div>
+
+      <div class="animated-section">
+        <h2 class="text-2xl underline mb-2">Languages</h2>
+        <ul class="space-y-1">
+          <li class="flex justify-between">Bengali <span>R-W-S</span></li>
+          <li class="flex justify-between">English <span>R-W-S</span></li>
+          <li class="flex justify-between">Hindi <span>R-S</span></li>
+        </ul>
+      </div>
+
+      <div class="animated-section">
+        <h2 class="text-2xl underline mb-2">Skills</h2>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-1">
+          <p>C/C++</p>
+          <p>Java</p>
+          <p>Python</p>
+          <p>JavaScript</p>
+          <p>Node.JS</p>
+          <p>Express.JS</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>PHP</p>
+          <p>SQL</p>
+          <p>Django</p>
+          <p>AWS</p>
+          <p>Tailwind-CSS</p>
+          <p>Figma</p>
+          <p>Git</p>
+          <p>GitHub</p>
+          <p>Bitbucket</p>
+          <p>CI/CD</p>
+          <p>IoT</p>
+          <p>Networking</p>
+        </div>
+      </div>
+
+      <div class="animated-section">
+        <h2 class="text-2xl underline mb-2">Education</h2>
+        <p class="font-semibold">B. Sc. in Computer Science</p>
+        <p>Ramakrishna Mission Vivekananda Centenary College, Rahara</p>
+        <p>2022-2025 | CGPA: 8.68</p>
+        <p class="mt-4 font-semibold">Schooling</p>
+        <p>Madarat Popular Academy (H.S.)</p>
+        <p>2014-2022</p>
+      </div>
+
+      <div class="animated-section">
+        <h2 class="text-2xl underline mb-2">Experience</h2>
+        <ul class="list-disc pl-4 space-y-4">
+          <li>IoT | C++ | Project - West Bengal State University (Sept 2022 - Jan 2023)</li>
+          <li>HTML | CSS | PHP | JS - Neuroverse 2024 - RKMVCC (Sept 2023 - Mar 2024)</li>
+          <li>Leadership - Nirdesh 2024 - RKMVCC (Mar 2024 - Oct 2024)</li>
+          <li>IoT | C++ | Internship - alrium pvt. ltd. - Bengaluru (Dec 2023 - Jul 2024)</li>
+          <li>Django | AWS | EC2 - Vigilantia Praesidium pvt. ltd. - Kolkata (Apr 2025 - Present)</li>
+        </ul>
+      </div>
+
+      <div class="animated-section">
+        <h2 class="text-2xl underline mb-2">Projects</h2>
+        <ul class="space-y-4">
+          <li class="border border-white p-4 rounded hover:bg-white hover:text-black hover:font-bold transition duration-300">
+            <a href="https://github.com/SuvamNaskar/Django-ToDo" target="_blank" class="text-blue-400 underline text-lg">Django Todo</a>
+            <p class="text-sm mt-2">Deployed on AWS infrastructure using Django, Docker, EC2, IAM, CI/CD, and GitHub Actions.</p>
+          </li>
+          <li class="border border-white p-4 rounded hover:bg-white hover:text-black hover:font-bold transition duration-300">
+            <a href="https://csrkmvcc.co.in/archive/2024/nirdesh/" target="_blank" class="text-blue-400 underline text-lg">Nirdesh 2024</a>
+            <p class="text-sm mt-2">Tech-Fest site with HTML, CSS, PHP, JS, MySQL. Deployed via GitHub + Hostinger.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="animated-section">
+        <h2 class="text-2xl underline mb-2">Contact</h2>
+        <p><a href="mailto:suvamnaskar.dev@gmail.com" class="underline">suvamnaskar.dev@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/suvamnaskar/" class="underline" target="_blank">LinkedIn</a></p>
+        <p><a href="https://github.com/SuvamNaskar" class="underline" target="_blank">GitHub</a></p>
+      </div>
+    </section>
+
+    <footer class="text-center text-xs p-6 border-t border-gray-700 mt-12">
+      <p>This mobile portfolio is created by Suvam Naskar</p>
+      <p>Hosted on AWS Lambda</p>
+      <p>Stack: Node.JS, Express.JS, Tailwind, GitHub Actions</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        gsap.utils.toArray(".animated-section").forEach(section => {
+          gsap.from(section, {
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%",
+              toggleActions: "play none none none"
+            },
+            opacity: 0,
+            y: 40,
+            duration: 1,
+            ease: "power2.out"
+          });
+        });
+
+        gsap.from(".profile-image", {
+          scrollTrigger: {
+            trigger: ".profile-image",
+            start: "top 90%",
+            toggleActions: "play none none none"
+          },
+          scale: 0.8,
+          opacity: 0,
+          duration: 1.2,
+          ease: "back.out(1.7)"
+        });
+      });
+    </script>
+  </body>
+</html>
