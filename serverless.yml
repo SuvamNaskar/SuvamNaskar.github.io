@@ -20,3 +20,6 @@ package:
     - app.js
     - package.json
     - node_modules/**
+    - style.css
+    - custom.css
+    - IMG_20250612_171610.jpg
