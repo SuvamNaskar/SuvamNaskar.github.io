@@ -12,10 +12,12 @@ functions:
       - httpApi: '*'
 
 package:
-  include:
-        - index.html
-        - mobile-index.html
-        - public/**    # includes static files like images, style.css, etc.
-        - lambda.js
-        - app.js
-        - node_modules/**
+  individually: true
+  patterns:
+    - public/**
+    - index.html
+    - mobile-index.html
+    - lambda.js
+    - app.js
+    - package.json
+    - node_modules/**

@@ -24,6 +24,9 @@ jobs:
       - name: Build Tailwind CSS
         run: npm run build:css
 
+      - name: Check built CSS
+        run: ls -l public && cat public/style.css | head -n 10
+
       - name: Install Serverless Framework v3
         run: npm install -g serverless@3
 

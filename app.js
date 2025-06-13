@@ -15,22 +15,22 @@ app.get('/', (req, res) => {
   const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
 
   if (isMobile) {
-    res.redirect('/m');
+    res.sendFile(mobileHtml);
   } else {
     res.sendFile(rootHtml);
   }
 });
 
-app.get('/m', (req, res) => {
-  const userAgent = req.headers['user-agent'] || '';
-  const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+// app.get('/m', (req, res) => {
+//   const userAgent = req.headers['user-agent'] || '';
+//   const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
 
-  if (isMobile) {
-    res.sendFile(mobileHtml);
-  } else {
-    res.redirect('/');
-  }
-});
+//   if (isMobile) {
+//     res.sendFile(mobileHtml);
+//   } else {
+//     res.redirect('/');
+//   }
+// });
 
 app.use((req, res) => {
   res.status(404).send('Route not found.');
