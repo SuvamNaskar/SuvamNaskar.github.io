@@ -12,14 +12,14 @@ export default function Projects() {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
-  const projectFilenames = ["cv-inventory-counter.py", "print-automation-server.sh", "saas-api-engine.go"];
+  const projectFilenames = ["nirdesh-techfest.py", "django-todo-list.sh", "arduino-heart-monitor.go"];
 
   return (
     <section id="projects" className="py-24 border-t-2.5 border-black bg-white select-none">
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex flex-col mb-16">
-          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 03. Selected Case Studies</span>
+          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 04. Selected Case Studies</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-black">
             Projects & Case Studies
           </h2>
@@ -27,7 +27,7 @@ export default function Projects() {
         </div>
 
         {/* Project Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project, index) => {
             const isExpanded = expandedIndex === index;
             const filename = projectFilenames[index];
@@ -37,7 +37,7 @@ export default function Projects() {
                 key={index}
                 layout
                 className={`brutalist-card overflow-hidden flex flex-col justify-between transition-all duration-200 ${
-                  isExpanded ? "md:col-span-3 shadow-brutalist-lg" : "hover:-translate-y-1 hover:shadow-brutalist-lg"
+                  isExpanded ? "md:col-span-3 shadow-brutalist-lg" : "h-full hover:-translate-y-1 hover:shadow-brutalist-lg"
                 }`}
               >
                 {/* Vintage Desktop Window Header Bar */}
@@ -58,12 +58,12 @@ export default function Projects() {
                 </div>
 
                 <div className="p-6 md:p-8 flex flex-col justify-between flex-grow">
-                  <div>
+                  <div className="flex-grow flex flex-col">
                     {/* Title */}
                     <h3 className="text-xl font-extrabold text-black mb-2">{project.title}</h3>
                     
                     {/* Elevator Pitch */}
-                    <p className="text-slate-700 text-sm leading-relaxed mb-6">
+                    <p className="text-slate-700 text-sm leading-relaxed mb-6 flex-grow">
                       {project.description}
                     </p>
 

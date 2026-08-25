@@ -8,6 +8,7 @@ const navItems = [
   { name: "Home", id: "home" },
   { name: "About", id: "about" },
   { name: "Experience", id: "experience" },
+  { name: "Academic", id: "credentials" },
   { name: "Projects", id: "projects" },
   { name: "Skills", id: "skills" },
   { name: "Contact", id: "contact" },
@@ -47,7 +48,7 @@ export default function Navbar() {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="px-6 h-full border-l-2.5 border-black hover:bg-black hover:text-white transition-colors duration-100 font-mono text-xs font-bold uppercase tracking-wider"
+              className="px-5 h-full border-l-2.5 border-black hover:bg-black hover:text-white transition-colors duration-100 font-mono text-xs font-bold uppercase tracking-wider"
             >
               {item.name}
             </button>

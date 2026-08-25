@@ -42,7 +42,7 @@ export default function About() {
             </div>
             <div className="flex items-center space-x-2 text-xs font-mono font-bold">
               <span className="w-2.5 h-2.5 bg-black rounded-full animate-ping" />
-              <span>Active in Central India</span>
+              <span>Active in Kolkata</span>
             </div>
           </div>
         </div>

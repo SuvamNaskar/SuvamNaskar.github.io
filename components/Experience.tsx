@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { Briefcase, Calendar, ChevronRight } from "lucide-react";
+import { Briefcase, Calendar, ChevronRight, FileDown } from "lucide-react";
 import { experiences } from "../data/portfolio";
 
-const tabNames = ["founding-engineer.doc", "software-dev.doc"];
+const tabNames = ["cloud-backend-eng.doc", "cloud-engineer.doc", "iot-intern.doc"];
 
 export default function Experience() {
   const [activeRoleIndex, setActiveRoleIndex] = useState(0);
@@ -34,7 +34,7 @@ export default function Experience() {
                     : "bg-white text-black hover:bg-slate-50"
                 }`}
               >
-                📁 {tabNames[idx]}
+                📁 {tabNames[idx] || "role.doc"}
               </button>
             ))}
           </div>
@@ -50,7 +50,7 @@ export default function Experience() {
                     {experiences[activeRoleIndex].role}
                   </h3>
                   <p className="text-xs font-mono font-bold text-slate-500 mt-1 uppercase">
-                    Company: {experiences[activeRoleIndex].company}
+                    Company: {experiences[activeRoleIndex].company} {experiences[activeRoleIndex].location && `| ${experiences[activeRoleIndex].location}`}
                   </p>
                 </div>
                 <div className="flex items-center text-black font-mono text-xs bg-[#ffde59] border-2 border-black px-3 py-1.5 shadow-brutalist-sm w-fit font-bold">
@@ -70,18 +70,33 @@ export default function Experience() {
               </ul>
 
               {/* Technical Stack used in role */}
-              <div className="pt-6 border-t border-dashed border-black/30">
-                <span className="block font-mono text-xs text-slate-500 font-bold uppercase mb-3">// Environment Variables</span>
-                <div className="flex flex-wrap gap-2">
-                  {experiences[activeRoleIndex].techStack.map((tech, idx) => (
-                    <span
-                      key={idx}
-                      className="font-mono text-xs px-3 py-1.5 bg-slate-100 border border-black text-black font-bold shadow-brutalist-sm rounded"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+              <div className="pt-6 border-t border-dashed border-black/30 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6">
+                <div className="flex-grow">
+                  <span className="block font-mono text-xs text-slate-500 font-bold uppercase mb-3">// Environment Variables</span>
+                  <div className="flex flex-wrap gap-2">
+                    {experiences[activeRoleIndex].techStack.map((tech, idx) => (
+                      <span
+                        key={idx}
+                        className="font-mono text-xs px-3 py-1.5 bg-slate-100 border border-black text-black font-bold shadow-brutalist-sm rounded"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
+                {experiences[activeRoleIndex].certUrl && (
+                  <div className="flex-shrink-0">
+                    <a
+                      href={experiences[activeRoleIndex].certUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="brutalist-button inline-flex items-center space-x-2 px-4 py-2.5 font-mono text-xs font-bold uppercase tracking-wider text-black bg-[#ffde59] hover:bg-[#ffe680]"
+                    >
+                      <FileDown className="w-4 h-4" />
+                      <span>Intern Cert</span>
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
