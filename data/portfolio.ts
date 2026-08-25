@@ -153,7 +153,7 @@ export const certificationsList: Certification[] = [
     issuer: "Amazon Web Services",
     date: "Nov 2025",
     description: "Verified foundational knowledge of cloud concepts, security, technology, and billing within the AWS ecosystem.",
-    verifyUrl: "https://www.credly.com/badges/ec761005-cb62-43f1-b873-5a2e9b015112"
+    verifyUrl: "https://www.credly.com/badges/5b706e6a-51b8-48f0-829a-f97ce26a2381/public_url"
   }
 ];
 
@@ -166,6 +166,24 @@ export const projects: Project[] = [
     techStack: ["Kotlin", "Jetpack Compose", "Firebase Auth", "Cloud Firestore", "Fused Location Provider", "ZXing", "Gradle DSL"],
     liveUrl: "#",
     githubUrl: "https://github.com/SuvamNaskar/UpasthitiCampus"
+  },
+  {
+    title: "BHKsplit.in",
+    description: "Free room-first utility splitting and chores rotation web application for shared Indian roommate households.",
+    problem: "Fairly splitting rent and utility bills in shared Indian apartments is difficult due to varying room sizes, attached balconies, AC allocations, WFH usage, and rotating chores schedules.",
+    solution: "Engineered a client-side Next.js web application utilizing a room-first pricing model. Designed rent split options with custom room weights, and a WFH-adjusted utility algorithm. Added a local-storage chore manager that rotates household responsibilities and exports PNG reports using the Canvas API.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Canvas API", "Local Storage"],
+    liveUrl: "https://bhksplit.in",
+    githubUrl: "https://github.com/SuvamNaskar/BHKsplit"
+  },
+  {
+    title: "Nidhimarg Yuva",
+    description: "React Native mobile personal-finance application designed for students, featuring AWS Cognito authentication and DynamoDB sync.",
+    problem: "Existing budget trackers lack student-specific workflows (pocket money planning, semester fees, stipends) and mandate cloud logins, ignoring offline availability.",
+    solution: "Developed a dark-themed native React Native CLI app using AsyncStorage for offline data. Integrated AWS Cognito for credentials and DynamoDB single-table schema for cloud sync. Engineered student utilities (Pocket Money Planner, Goal Tracker, Semester Fee reminders) with Notifee alerts.",
+    techStack: ["React Native CLI", "React 19", "AWS Cognito", "AWS DynamoDB", "AsyncStorage", "Notifee", "React Navigation"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/SuvamNaskar/dhansetu-yuva"
   },
   {
     title: "Nirdesh Tech-Fest Portal",

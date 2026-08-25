@@ -14,6 +14,8 @@ export default function Projects() {
 
   const projectFilenames = [
     "upasthiti-campus.apk",
+    "bhksplit-rent.ts",
+    "nidhimarg-yuva.ipa",
     "nirdesh-techfest.py",
     "django-todo-list.sh",
     "arduino-heart-monitor.go"
@@ -32,7 +34,7 @@ export default function Projects() {
         </div>
 
         {/* Project Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => {
             const isExpanded = expandedIndex === index;
             const filename = projectFilenames[index] || "project.bin";
@@ -42,7 +44,7 @@ export default function Projects() {
                 key={index}
                 layout
                 className={`brutalist-card overflow-hidden flex flex-col justify-between transition-all duration-200 ${
-                  isExpanded ? "md:col-span-2 shadow-brutalist-lg" : "h-full hover:-translate-y-1 hover:shadow-brutalist-lg"
+                  isExpanded ? "md:col-span-2 lg:col-span-3 shadow-brutalist-lg" : "h-full hover:-translate-y-1 hover:shadow-brutalist-lg"
                 }`}
               >
                 {/* Vintage Desktop Window Header Bar */}
