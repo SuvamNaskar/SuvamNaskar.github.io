@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Cpu, Layers, Terminal } from "lucide-react";
-import { metricHighlights } from "@/data/portfolio";
+import { metricHighlights } from "../data/portfolio";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Cpu: Cpu,

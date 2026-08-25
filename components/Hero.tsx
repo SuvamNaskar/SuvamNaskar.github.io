@@ -2,7 +2,7 @@
 
 import React from "react";
 import { ArrowUpRight, Github, Linkedin, Mail, FileText } from "lucide-react";
-import { personalInfo } from "@/data/portfolio";
+import { personalInfo } from "../data/portfolio";
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
