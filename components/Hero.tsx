@@ -64,28 +64,49 @@ export default function Hero() {
               stroke="currentColor"
               strokeWidth="2.5"
             >
-              {/* Main computer body */}
-              <rect x="40" y="20" width="120" height="130" rx="10" fill="white" />
-              {/* Screen bezel */}
-              <rect x="50" y="30" width="100" height="85" rx="4" fill="white" />
-              {/* CRT Screen outline */}
-              <rect x="58" y="38" width="84" height="65" rx="2" fill="#fff" />
-              {/* Floppy drive slot */}
-              <rect x="50" y="125" width="45" height="5" rx="1" fill="black" />
-              {/* Ventilation lines */}
-              <line x1="110" y1="125" x2="150" y2="125" stroke="black" strokeWidth="2.5" />
-              <line x1="110" y1="130" x2="150" y2="130" stroke="black" strokeWidth="2.5" />
-              {/* Computer face (smiling node) */}
-              <circle cx="100" cy="70" r="16" fill="black" />
-              {/* Smiley eyes */}
-              <circle cx="94" cy="66" r="3.5" fill="white" />
-              <circle cx="106" cy="66" r="3.5" fill="white" />
-              {/* Smiley mouth */}
-              <path d="M94 75 Q100 81 106 75" stroke="white" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-              {/* Stand */}
-              <path d="M50 150 L150 150 L160 172 L40 172 Z" fill="white" />
-              {/* Shadow effect on SVG */}
-              <path d="M40 172 H160" stroke="black" strokeWidth="3" />
+              {/* Cloud Outline in center-top */}
+              <path
+                d="M 60 60 C 50 60, 42 68, 42 78 C 42 88, 50 96, 62 96 H 138 C 148 96, 156 88, 156 78 C 156 68, 148 60, 138 60 C 132 45, 110 40, 96 50 C 85 42, 68 45, 60 60 Z"
+                fill="white"
+                stroke="black"
+                strokeWidth="2.5"
+              />
+
+              {/* Network Link Lines going down */}
+              <path d="M 75 96 L 75 125 L 55 125" stroke="black" strokeWidth="2.5" strokeLinecap="round" />
+              <path d="M 125 96 L 125 125 L 145 125" stroke="black" strokeWidth="2.5" strokeLinecap="round" />
+              <line x1="100" y1="96" x2="100" y2="125" stroke="black" strokeWidth="2.5" />
+
+              {/* Data packet boxes on link lines */}
+              <rect x="71" y="105" width="8" height="8" rx="1" fill="black" />
+              <rect x="121" y="110" width="8" height="8" rx="1" fill="black" />
+
+              {/* Left Node: Database Cylinder */}
+              <g transform="translate(10, 120)">
+                <rect x="5" y="10" width="30" height="35" rx="3" fill="white" stroke="black" strokeWidth="2.5" />
+                <path d="M 5 20 C 5 25, 35 25, 35 20" stroke="black" strokeWidth="2.5" />
+                <path d="M 5 30 C 5 35, 35 35, 35 30" stroke="black" strokeWidth="2.5" />
+                <path d="M 5 10 C 5 15, 35 15, 35 10" stroke="black" strokeWidth="2.5" fill="white" />
+              </g>
+
+              {/* Center Node: Server Stack Console */}
+              <g transform="translate(80, 120)">
+                <rect x="10" y="5" width="20" height="40" rx="2" fill="white" stroke="black" strokeWidth="2.5" />
+                <line x1="13" y1="12" x2="27" y2="12" stroke="black" strokeWidth="2.2" />
+                <line x1="13" y1="20" x2="27" y2="20" stroke="black" strokeWidth="2.2" />
+                <line x1="13" y1="28" x2="27" y2="28" stroke="black" strokeWidth="2.2" />
+                <circle cx="15" cy="38" r="1.5" fill="black" />
+                <circle cx="20" cy="38" r="1.5" fill="black" />
+                <circle cx="25" cy="38" r="1.5" fill="black" />
+              </g>
+
+              {/* Right Node: Terminal Client */}
+              <g transform="translate(140, 120)">
+                <rect x="5" y="12" width="30" height="26" rx="2" fill="white" stroke="black" strokeWidth="2.5" />
+                <rect x="9" y="16" width="22" height="14" rx="1" fill="white" stroke="black" strokeWidth="2" />
+                <line x1="13" y1="23" x2="21" y2="23" stroke="black" strokeWidth="2" />
+                <path d="M 10 38 L 30 38" stroke="black" strokeWidth="2.5" strokeLinecap="round" />
+              </g>
             </svg>
           </div>
         </div>
