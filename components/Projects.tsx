@@ -12,7 +12,12 @@ export default function Projects() {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
-  const projectFilenames = ["nirdesh-techfest.py", "django-todo-list.sh", "arduino-heart-monitor.go"];
+  const projectFilenames = [
+    "upasthiti-campus.apk",
+    "nirdesh-techfest.py",
+    "django-todo-list.sh",
+    "arduino-heart-monitor.go"
+  ];
 
   return (
     <section id="projects" className="py-24 border-t-2.5 border-black bg-white select-none">
@@ -27,17 +32,17 @@ export default function Projects() {
         </div>
 
         {/* Project Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => {
             const isExpanded = expandedIndex === index;
-            const filename = projectFilenames[index];
+            const filename = projectFilenames[index] || "project.bin";
 
             return (
               <motion.div
                 key={index}
                 layout
                 className={`brutalist-card overflow-hidden flex flex-col justify-between transition-all duration-200 ${
-                  isExpanded ? "md:col-span-3 shadow-brutalist-lg" : "h-full hover:-translate-y-1 hover:shadow-brutalist-lg"
+                  isExpanded ? "md:col-span-2 shadow-brutalist-lg" : "h-full hover:-translate-y-1 hover:shadow-brutalist-lg"
                 }`}
               >
                 {/* Vintage Desktop Window Header Bar */}

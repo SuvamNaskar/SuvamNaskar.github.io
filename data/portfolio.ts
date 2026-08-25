@@ -159,6 +159,15 @@ export const certificationsList: Certification[] = [
 
 export const projects: Project[] = [
   {
+    title: "Upasthiti Campus",
+    description: "Android attendance-management application using Jetpack Compose and Firebase, verifying attendance using local QR-code scans and location validation.",
+    problem: "Manual college attendance tracking is slow, paper-heavy, and prone to proxy entries, while network-based verification requires complex school server infrastructure.",
+    solution: "Designed a role-based Kotlin client app using Jetpack Compose. Teachers generate geo-fenced, time-limited sessions displaying local QR codes. Students scan and submit attendance, verified by matching their device location within the teacher's radius (worse than 25m accuracy is rejected), saving data in Firebase Firestore and Authentication.",
+    techStack: ["Kotlin", "Jetpack Compose", "Firebase Auth", "Cloud Firestore", "Fused Location Provider", "ZXing", "Gradle DSL"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/SuvamNaskar/UpasthitiCampus"
+  },
+  {
     title: "Nirdesh Tech-Fest Portal",
     description: "Full-featured registration, event portal, and interactive mystery game platform built for college tech-fests.",
     problem: "College tech-fests need registration structures with automated verification, secure verification check-ins for food vendors, and dynamic online competition stages without operational latency.",
