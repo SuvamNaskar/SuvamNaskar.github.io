@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #e8e8e8;
+  --foreground: #000000;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.1) 1.2px, transparent 1.2px);
+  background-size: 16px 16px;
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Retro Block Scrollbar */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e8e8e8;
+  border-left: 2px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 2px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #d6d6d6;
+}
+
+/* Selection Highlight */
+::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Brutalist Custom Styles */
+.brutalist-border {
+  border: 2.5px solid #000000;
+}
+
+.brutalist-card {
+  background-color: #ffffff;
+  border: 2.5px solid #000000;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.brutalist-button {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+  transition: all 0.1s ease-in-out;
+}
+
+.brutalist-button:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.brutalist-button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
+}
+
+/* Window Header Styling */
+.window-dot {
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid #000000;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
