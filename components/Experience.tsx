@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Briefcase, Calendar, ChevronRight } from "lucide-react";
-import { experiences } from "@/data/portfolio";
+import { experiences } from "../data/portfolio";
 
 const tabNames = ["founding-engineer.doc", "software-dev.doc"];
 

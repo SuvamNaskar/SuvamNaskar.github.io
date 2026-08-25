@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, ExternalLink, ChevronDown, ChevronUp, AlertOctagon, Terminal } from "lucide-react";
-import { projects, Project } from "@/data/portfolio";
+import { projects, Project } from "../data/portfolio";
 
 export default function Projects() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);

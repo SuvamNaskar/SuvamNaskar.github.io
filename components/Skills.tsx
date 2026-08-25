@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Server, Cloud, Code2, Database } from "lucide-react";
-import { skillGroups } from "@/data/portfolio";
+import { skillGroups } from "../data/portfolio";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   "Backend & APIs": Server,

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Mail, Copy, Check, Github, Linkedin, ArrowUpRight, AlertTriangle } from "lucide-react";
-import { personalInfo } from "@/data/portfolio";
+import { personalInfo } from "../data/portfolio";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
