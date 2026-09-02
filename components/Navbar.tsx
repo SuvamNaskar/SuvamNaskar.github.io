@@ -7,10 +7,10 @@ import { Terminal, Menu, X } from "lucide-react";
 const navItems = [
   { name: "Home", id: "home" },
   { name: "About", id: "about" },
+  { name: "Academics", id: "credentials" },
   { name: "Experience", id: "experience" },
-  { name: "Academic", id: "credentials" },
-  { name: "Projects", id: "projects" },
-  { name: "Skills", id: "skills" },
+  { name: "Research", id: "projects" },
+  { name: "Competencies", id: "skills" },
   { name: "Contact", id: "contact" },
 ];
 
