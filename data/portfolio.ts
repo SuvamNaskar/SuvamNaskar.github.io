@@ -149,6 +149,12 @@ export const educationList: Education[] = [
 
 export const certificationsList: Certification[] = [
   {
+    name: "UGC NET – Assistant Professor / Lectureship",
+    issuer: "University Grants Commission (UGC) / NTA",
+    date: "Qualified (LS / AP)",
+    description: "Qualified the National Eligibility Test (NET) for Assistant Professorship and Lectureship in Computer Science and Applications.",
+  },
+  {
     name: "AWS Certified Cloud Practitioner (CLF-C02)",
     issuer: "Amazon Web Services",
     date: "Nov 2025",
