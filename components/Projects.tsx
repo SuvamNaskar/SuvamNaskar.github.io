@@ -13,12 +13,11 @@ export default function Projects() {
   };
 
   const projectFilenames = [
+    "arduino-heartbeat.ino",
+    "wireguard-vpn.sys",
     "upasthiti-campus.apk",
-    "bhksplit-rent.ts",
-    "nidhimarg-yuva.ipa",
-    "nirdesh-techfest.py",
-    "django-todo-list.sh",
-    "arduino-heart-monitor.go"
+    "bhksplit.ts",
+    "nidhimarg-yuva.app"
   ];
 
   return (
@@ -26,9 +25,9 @@ export default function Projects() {
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex flex-col mb-16">
-          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 04. Selected Case Studies</span>
+          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 04. Research &amp; Academic Projects</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-black">
-            Projects & Case Studies
+            Research &amp; Systems Projects
           </h2>
           <div className="w-16 h-1.5 bg-black mt-3 rounded-full" />
         </div>

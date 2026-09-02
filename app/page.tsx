@@ -15,8 +15,8 @@ export default function Home() {
       <main className="max-w-5xl mx-auto border-x-2.5 border-black bg-white shadow-brutalist min-h-screen">
         <Hero />
         <About />
-        <Experience />
         <Credentials />
+        <Experience />
         <Projects />
         <Skills />
         <Contact />
