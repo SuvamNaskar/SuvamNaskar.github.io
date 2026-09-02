@@ -10,9 +10,9 @@ export default function Credentials() {
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex flex-col mb-16">
-          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 03. Academic & Badges</span>
+          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 02. Academic Background &amp; Qualifications</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-black">
-            Education & Certifications
+            Education &amp; Qualifications
           </h2>
           <div className="w-16 h-1.5 bg-black mt-3 rounded-full" />
         </div>
@@ -26,7 +26,7 @@ export default function Credentials() {
                 <span className="window-dot" />
                 <span className="window-dot" />
               </div>
-              <span>education.cfg</span>
+              <span>curriculum.edu</span>
               <div className="w-6" />
             </div>
 
@@ -66,7 +66,7 @@ export default function Credentials() {
                 <span className="window-dot" />
                 <span className="window-dot" />
               </div>
-              <span>certifications.db</span>
+              <span>qualifications.db</span>
               <div className="w-6" />
             </div>
 
