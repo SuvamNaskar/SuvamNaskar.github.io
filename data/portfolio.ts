@@ -154,7 +154,7 @@ export const certificationsList: Certification[] = [
     issuer: "University Grants Commission (UGC) / NTA",
     date: "Qualified (LS / AP)",
     description: "Qualified the National Eligibility Test (NET) for Assistant Professorship and Lectureship in Computer Science and Applications.",
-    verifyUrl: "/documents/certs/ugc-net.png",
+    verifyUrl: "/documents/certs/UGC_NET_suvamnaskar.pdf",
     buttonLabel: "View Certificate"
   },
   {
