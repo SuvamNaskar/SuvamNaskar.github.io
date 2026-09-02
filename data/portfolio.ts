@@ -43,6 +43,7 @@ export interface Certification {
   date: string;
   description: string;
   verifyUrl?: string;
+  buttonLabel?: string;
 }
 
 export interface PersonalInfo {
@@ -153,13 +154,16 @@ export const certificationsList: Certification[] = [
     issuer: "University Grants Commission (UGC) / NTA",
     date: "Qualified (LS / AP)",
     description: "Qualified the National Eligibility Test (NET) for Assistant Professorship and Lectureship in Computer Science and Applications.",
+    verifyUrl: "/documents/certs/ugc-net.png",
+    buttonLabel: "View Certificate"
   },
   {
     name: "AWS Certified Cloud Practitioner (CLF-C02)",
     issuer: "Amazon Web Services",
     date: "Nov 2025",
     description: "Verified foundational knowledge of cloud concepts, security, technology, and billing within the AWS ecosystem.",
-    verifyUrl: "https://www.credly.com/badges/5b706e6a-51b8-48f0-829a-f97ce26a2381/public_url"
+    verifyUrl: "https://www.credly.com/badges/5b706e6a-51b8-48f0-829a-f97ce26a2381/public_url",
+    buttonLabel: "Verify Credential"
   }
 ];
 

@@ -99,7 +99,7 @@ export default function Credentials() {
                         rel="noopener noreferrer"
                         className="brutalist-button inline-flex items-center space-x-2 px-4 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider text-black bg-[#ffe680] hover:bg-[#ffde59]"
                       >
-                        <span>Verify Credential</span>
+                        <span>{cert.buttonLabel || "Verify Credential"}</span>
                         <ExternalLink className="w-3.5 h-3.5" />
                       </a>
                     </div>
