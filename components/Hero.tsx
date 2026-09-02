@@ -28,20 +28,20 @@ export default function Hero() {
             I'm Suvam.
           </h1>
 
-          <p className="text-lg md:text-xl font-mono font-bold text-black border-l-4 border-black pl-4">
-            Founding Engineer & Cloud Architect
+          <p className="text-base md:text-lg font-mono font-bold text-black border-l-4 border-black pl-4">
+            M.Sc. Computer Science Student &amp; UGC NET Qualified
           </p>
 
           <p className="text-slate-700 text-sm md:text-base leading-relaxed max-w-xl">
-            {personalInfo.tagline} Rebuilding modern web systems with containerized microservices, custom print servers, self-hosted networks, and edge automation modules.
+            {personalInfo.tagline}
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2">
             <button
-              onClick={() => scrollToSection("projects")}
+              onClick={() => scrollToSection("credentials")}
               className="brutalist-button px-6 py-3 font-mono text-xs font-bold uppercase tracking-wider text-black bg-[#ffde59] hover:bg-[#ffe680]"
             >
-              View Projects
+              Academics &amp; Qualifications
             </button>
             <a
               href={personalInfo.resumeUrl}
@@ -49,7 +49,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="brutalist-button px-6 py-3 font-mono text-xs font-bold uppercase tracking-wider text-black hover:bg-black hover:text-white"
             >
-              Resume PDF
+              Curriculum Vitae (PDF)
             </a>
           </div>
         </div>
