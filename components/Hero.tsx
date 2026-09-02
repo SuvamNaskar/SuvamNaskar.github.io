@@ -28,20 +28,20 @@ export default function Hero() {
             I'm Suvam.
           </h1>
 
-          <p className="text-lg md:text-xl font-mono font-bold text-black border-l-4 border-black pl-4">
-            Founding Engineer & Cloud Architect
+          <p className="text-base md:text-lg font-mono font-bold text-black border-l-4 border-black pl-4">
+            M.Sc. Computer Science Student &amp; UGC NET Qualified (Assistant Professor)
           </p>
 
           <p className="text-slate-700 text-sm md:text-base leading-relaxed max-w-xl">
-            {personalInfo.tagline} Rebuilding modern web systems with containerized microservices, custom print servers, self-hosted networks, and edge automation modules.
+            {personalInfo.tagline}
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2">
             <button
-              onClick={() => scrollToSection("projects")}
+              onClick={() => scrollToSection("credentials")}
               className="brutalist-button px-6 py-3 font-mono text-xs font-bold uppercase tracking-wider text-black bg-[#ffde59] hover:bg-[#ffe680]"
             >
-              View Projects
+              Academics &amp; Qualifications
             </button>
             <a
               href={personalInfo.resumeUrl}
@@ -49,7 +49,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="brutalist-button px-6 py-3 font-mono text-xs font-bold uppercase tracking-wider text-black hover:bg-black hover:text-white"
             >
-              Resume PDF
+              Curriculum Vitae (PDF)
             </a>
           </div>
         </div>
@@ -100,12 +100,15 @@ export default function Hero() {
                 <circle cx="25" cy="38" r="1.5" fill="black" />
               </g>
 
-              {/* Right Node: Terminal Client */}
-              <g transform="translate(140, 120)">
-                <rect x="5" y="12" width="30" height="26" rx="2" fill="white" stroke="black" strokeWidth="2.5" />
-                <rect x="9" y="16" width="22" height="14" rx="1" fill="white" stroke="black" strokeWidth="2" />
-                <line x1="13" y1="23" x2="21" y2="23" stroke="black" strokeWidth="2" />
-                <path d="M 10 38 L 30 38" stroke="black" strokeWidth="2.5" strokeLinecap="round" />
+              {/* Right Node: Client Terminal Monitor */}
+              <g transform="translate(145, 120)">
+                <rect x="5" y="10" width="35" height="25" rx="2" fill="white" stroke="black" strokeWidth="2.5" />
+                <rect x="8" y="13" width="29" height="19" fill="#e8e8e8" stroke="black" strokeWidth="1.5" />
+                <line x1="11" y1="18" x2="22" y2="18" stroke="black" strokeWidth="2" strokeLinecap="round" />
+                <line x1="11" y1="23" x2="17" y2="23" stroke="black" strokeWidth="2" strokeLinecap="round" />
+                <path d="M 18 35 L 27 35" stroke="black" strokeWidth="2.5" strokeLinecap="round" />
+                <line x1="22.5" y1="35" x2="22.5" y2="38" stroke="black" strokeWidth="2.5" />
+                <line x1="15" y1="38" x2="30" y2="38" stroke="black" strokeWidth="2.5" strokeLinecap="round" />
               </g>
             </svg>
           </div>
@@ -139,7 +142,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="flex items-center justify-between px-6 py-4 hover:bg-black hover:text-white transition-colors duration-100 group"
             >
-              <span>Resume PDF</span>
+              <span>Curriculum Vitae</span>
               <ArrowUpRight className="w-4 h-4 text-black group-hover:text-white transition-colors" />
             </a>
             <a

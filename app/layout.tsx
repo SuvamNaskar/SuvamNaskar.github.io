@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Suvam Naskar | Founding Engineer & Cloud Architect",
-  description: "Founding Engineer & Cloud Architect specializing in scalable backend systems, cloud pipelines, and full-stack web/mobile applications.",
+  title: "Suvam Naskar | M.Sc. Computer Science & UGC NET Qualified",
+  description: "Personal academic portfolio of Suvam Naskar. M.Sc. Computer Science student at Ramakrishna Mission Vivekananda Centenary College and UGC NET qualified for Assistant Professorship.",
   icons: {
     icon: "/src/icon.webp"
   }
