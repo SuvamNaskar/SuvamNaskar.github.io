@@ -1,0 +1,87 @@
+=== PAGE 1 ===
+Suvam Naskar
+♂¶ap-¶arker-altKolkata, WB, India✉suvamnaskar.dev@gmail.com♂phone-alt+91 8348089859🔗portfolio
+/linkedin-insuvamnaskar/githubSuvamNaskar
+Academic Profile
+Computer Science researcher and educator qualified through the National Eligibility Test (UGC NET) for Assis-
+tant Professorship. Background in distributed cloud architectures, backend systems engineering, and embedded
+IoT computing. Experienced in designing scalable infrastructure, low-level microcontroller integration, and lab-
+oratory project mentorship, with a dedication to academic teaching and applied systems research.
+Education
+Ramakrishna Mission Vivekananda Centenary College
+M.Sc. in Computer Science
+Aug 2025 – Present
+◦Status: Ongoing
+Ramakrishna Mission Vivekananda Centenary College
+B.Sc. in Computer Science Hons.
+Jul 2022 – Jun 2025
+◦CGPA: 8.68 / 10.0
+Academic Qualifications & Honors
+UGC NET – Assistant Professor / Lectureship
+University Grants Commission (UGC) / NTA
+Qualified
+◦Qualified the National Eligibility Test (NET) for Assistant Professorship and Lectureship in Computer
+Science and Applications.
+◦Certificate - Verify /external-link-alt
+Research & Publications
+Novel Heart Beat Monitor Using Arduino
+Research Project Under Prof. Manas Pal (RKMVCC)
+Nov 2022 – Jan 2023
+◦Conducted research on embedded sensor telemetry, analog signal filtering, and real-time biometric data
+capture using Arduino microcontrollers.
+◦Abstract published and presented at the5th Regional Science & Technology Congress (RSTC),
+West Bengal.
+Professional Certifications
+AWS Certified Cloud Practitioner (CLF-C02)
+Amazon Web Services
+Nov 2025
+◦Certified knowledge of distributed cloud architecture, network topologies (VPC), IAM security controls, and
+high-availability systems.
+◦Credly Credential - Verify /external-link-alt
+Systems Engineering & Technical Experience
+Cloud & Backend Systems Engineer
+Vigilantia Praesidium Pvt. Ltd.
+Baranagar, Kolkata
+Apr 2025 – Jun 2026
+◦Architected distributed cloud infrastructure using AWS EC2, S3, RDS Aurora, IAM policies, and isolated
+Suvam Naskar - Page 1 of 2
+Last updated in September 2026
+=== PAGE 2 ===
+Virtual Private Clouds (VPC).
+◦Designed backend web services and REST APIs with Python (Django), optimizing relational database
+indexing and query latency.
+◦Implemented CI/CD pipelines via GitHub Actions and containerized service microservices using Docker for
+reproducible deployment environments.
+Cloud Systems Engineer
+alrium pvt. ltd.
+Koramangala, Bangalore
+Jul 2025 – Mar 2026
+◦Maintained fault-tolerant, multi-region cloud infrastructure for global enterprise services using AWS EC2,
+Lambda, RDS, and SNS.
+◦Automated cloud deployment scripts and operational pipelines to enforce software verification and infras-
+tructure testing standards.
+IoT Research & Embedded Systems Intern - cert /external-link-alt
+alrium pvt. ltd.
+Koramangala, Bangalore
+Dec 2023 – Jun 2024
+◦Designed dynamic Wi-Fi communication modules facilitating edge-to-cloud bidirectional communication for
+real-time telemetry monitoring.
+◦Implemented low-latency Over-The-Air (OTA) microcontroller firmware updates and cloud state synchro-
+nization mechanisms.
+Academic Projects
+Automated WireGuard VPN Infrastructure Control Panel /external-link-alt
+◦Implemented on-demand network tunnel infrastructure on AWS using serverless execution (AWS Lambda,
+API Gateway) to dynamically govern host instances.
+◦Configured automated DNS routing via Cloudflare APIs and implemented secure endpoint-to-endpoint
+WireGuard protocols.
+Teaching Competencies & Technical Skills
+–Core Computer Science Areas:Data Structures & Algorithms, Operating Systems, Database Management
+Systems (DBMS), Computer Networks, System Design & Microservices.
+–Languages:Python, C, C++, Java, SQL, JavaScript.
+–Web Frameworks & APIs:Django, FastAPI, RESTful Architecture, MVC/MVT Design Patterns.
+–Cloud & Systems:AWS (VPC, IAM, EC2, Lambda, S3, RDS), Docker, Linux Kernel/Shell Scripting, CI/CD
+(GitHub Actions).
+–Embedded & IoT Hardware:ESP32, Arduino, Raspberry Pi, Sensor Interfacing, Edge Computing Teleme-
+try.
+–Databases:PostgreSQL, MySQL, Aurora, MongoDB, DynamoDB.
+Suvam Naskar - Page 2 of 2
