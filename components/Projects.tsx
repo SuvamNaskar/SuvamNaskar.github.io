@@ -13,11 +13,12 @@ export default function Projects() {
   };
 
   const projectFilenames = [
-    "arduino-heartbeat.ino",
-    "wireguard-vpn.sys",
     "upasthiti-campus.apk",
-    "bhksplit.ts",
-    "nidhimarg-yuva.app"
+    "bhksplit-rent.ts",
+    "nidhimarg-yuva.ipa",
+    "nirdesh-techfest.py",
+    "django-todo-list.sh",
+    "arduino-heart-monitor.go"
   ];
 
   return (
@@ -25,9 +26,9 @@ export default function Projects() {
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex flex-col mb-16">
-          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 04. Research &amp; Academic Projects</span>
+          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 04. Selected Case Studies</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-black">
-            Research &amp; Systems Projects
+            Projects & Case Studies
           </h2>
           <div className="w-16 h-1.5 bg-black mt-3 rounded-full" />
         </div>
@@ -42,9 +43,8 @@ export default function Projects() {
               <motion.div
                 key={index}
                 layout
-                className={`brutalist-card overflow-hidden flex flex-col justify-between transition-all duration-200 ${
-                  isExpanded ? "md:col-span-2 lg:col-span-3 shadow-brutalist-lg" : "h-full hover:-translate-y-1 hover:shadow-brutalist-lg"
-                }`}
+                className={`brutalist-card overflow-hidden flex flex-col justify-between transition-all duration-200 ${isExpanded ? "md:col-span-2 lg:col-span-3 shadow-brutalist-lg" : "h-full hover:-translate-y-1 hover:shadow-brutalist-lg"
+                  }`}
               >
                 {/* Vintage Desktop Window Header Bar */}
                 <div className="bg-[#e8e8e8] border-b-2 border-black px-4 py-2 flex items-center justify-between font-mono text-[10px] font-bold text-black">
@@ -67,7 +67,7 @@ export default function Projects() {
                   <div className="flex-grow flex flex-col">
                     {/* Title */}
                     <h3 className="text-xl font-extrabold text-black mb-2">{project.title}</h3>
-                    
+
                     {/* Elevator Pitch */}
                     <p className="text-slate-700 text-sm leading-relaxed mb-6 flex-grow">
                       {project.description}

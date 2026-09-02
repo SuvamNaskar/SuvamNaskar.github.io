@@ -1,16 +1,14 @@
 "use client";
 
 import React from "react";
-import { Server, Cloud, Code2, Database, BookOpen, Cpu } from "lucide-react";
+import { Server, Cloud, Code2, Database } from "lucide-react";
 import { skillGroups } from "../data/portfolio";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  "Core Computer Science (Teaching Competencies)": BookOpen,
-  "Programming Languages": Code2,
-  "Cloud & Systems Engineering": Cloud,
-  "Embedded & IoT Hardware": Cpu,
-  "Web Frameworks & APIs": Server,
-  "Databases & Storage": Database,
+  "Backend & APIs": Server,
+  "Cloud & DevOps": Cloud,
+  "Frontend & Mobile": Code2,
+  "Databases & Tools": Database,
 };
 
 const bgColors = ["bg-[#ffe680]", "bg-[#5ce1e6]", "bg-[#ff9f43]", "bg-[#ffde59]"];
@@ -21,9 +19,9 @@ export default function Skills() {
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex flex-col mb-16">
-          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 05. Academic &amp; Technical Domains</span>
+          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 04. Technical Index</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-black">
-            Teaching Competencies &amp; Domains
+            Skills & Frameworks
           </h2>
           <div className="w-16 h-1.5 bg-black mt-3 rounded-full" />
         </div>

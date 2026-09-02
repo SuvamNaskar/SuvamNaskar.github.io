@@ -18,9 +18,9 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Section Header */}
         <div className="flex flex-col items-center mb-16">
-          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 06. Communication</span>
+          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 05. Collaboration</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-black">
-            Academic Inquiries &amp; Connect
+            System Shutdown / Connect
           </h2>
           <div className="w-16 h-1.5 bg-black mt-3 rounded-full" />
         </div>
@@ -41,11 +41,11 @@ export default function Contact() {
           <div className="p-6 md:p-8 space-y-6">
             <div className="flex items-center justify-center space-x-3 text-black">
               <AlertTriangle className="w-6 h-6 fill-[#ffde59] text-black stroke-[2]" />
-              <span className="font-mono text-xs font-bold uppercase tracking-wider">Communication Channel Available</span>
+              <span className="font-mono text-xs font-bold uppercase tracking-wider">Warning: Connection Available</span>
             </div>
 
             <p className="text-slate-800 text-sm leading-relaxed max-w-sm mx-auto">
-              Open for academic collaborations, research discussions, and lectureship inquiries. Feel free to copy my contact email or reach out directly.
+              You are about to establish contact with Suvam Naskar. Do you want to copy his credentials to your local system?
             </p>
 
             {/* Action Buttons */}

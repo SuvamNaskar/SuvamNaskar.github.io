@@ -1,17 +1,16 @@
 "use client";
 
 import React from "react";
-import { Cpu, Layers, Terminal, GraduationCap } from "lucide-react";
+import { Cpu, Layers, Terminal } from "lucide-react";
 import { metricHighlights } from "../data/portfolio";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Cpu: Cpu,
   Layers: Layers,
   Terminal: Terminal,
-  GraduationCap: GraduationCap,
 };
 
-const windowNames = ["academic-net.edu", "rstc-research.iot", "cloud-systems.net"];
+const windowNames = ["cloud-architecture.sys", "startup-lead.cfg", "homelab-mesh.net"];
 
 export default function About() {
   return (
@@ -19,9 +18,9 @@ export default function About() {
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex flex-col mb-16">
-          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 01. Academic Profile &amp; Research</span>
+          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 01. Impact & Highlights</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-black">
-            Academic Background &amp; Focus
+            System Specs & Focus
           </h2>
           <div className="w-16 h-1.5 bg-black mt-3 rounded-full" />
         </div>
@@ -30,20 +29,20 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 items-start">
           <div className="md:col-span-8 text-slate-800 space-y-6 text-sm md:text-base leading-relaxed">
             <p>
-              I am an M.Sc. Computer Science student at Ramakrishna Mission Vivekananda Centenary College, qualified through the National Eligibility Test (UGC NET) for Assistant Professorship and Lectureship (LS/AP).
+              I am a software engineer focused on building highly scalable, reliable architectures and full-stack platforms. My engineering philosophy revolves around simplicity, performance, and automation.
             </p>
             <p>
-              My academic interests bridge core computer science fundamentals, distributed cloud infrastructure, and embedded IoT computing. With experience across low-level microcontroller integration, cloud engineering, and laboratory project work, I am passionate about academic instruction, teaching foundational CS, and applied systems research.
+              From designing computer vision edge-to-cloud pipelines to deploying containerized microservices within secure private mesh networks, I love solving hard scaling problems and automating developers' workflows.
             </p>
           </div>
           <div className="md:col-span-4 brutalist-card p-6 bg-[#ffde59] text-black">
             <div className="text-[10px] font-mono font-bold text-slate-700 uppercase mb-2">// CURRENT STATUS</div>
             <div className="text-xs md:text-sm font-bold leading-relaxed mb-4">
-              M.Sc. Student at RKMVCC // UGC NET Qualified (Assistant Professor) // Active in Kolkata.
+              Leading technical architecture and infrastructure design in startup environments.
             </div>
             <div className="flex items-center space-x-2 text-xs font-mono font-bold">
               <span className="w-2.5 h-2.5 bg-black rounded-full animate-ping" />
-              <span>Kolkata, WB, India</span>
+              <span>Active in Kolkata</span>
             </div>
           </div>
         </div>

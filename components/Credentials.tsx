@@ -10,9 +10,9 @@ export default function Credentials() {
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex flex-col mb-16">
-          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 02. Academic Background &amp; Qualifications</span>
+          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 03. Academic & Badges</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-black">
-            Education &amp; Qualifications
+            Education & Certifications
           </h2>
           <div className="w-16 h-1.5 bg-black mt-3 rounded-full" />
         </div>
@@ -26,7 +26,7 @@ export default function Credentials() {
                 <span className="window-dot" />
                 <span className="window-dot" />
               </div>
-              <span>curriculum.edu</span>
+              <span>education.cfg</span>
               <div className="w-6" />
             </div>
 
@@ -41,7 +41,7 @@ export default function Credentials() {
                     <div className="space-y-1">
                       <h3 className="font-extrabold text-sm md:text-base text-black">{edu.degree}</h3>
                       <p className="font-mono text-xs font-bold text-slate-600 uppercase">{edu.school}</p>
-                      
+
                       <div className="flex flex-wrap gap-3 items-center pt-2 text-[10px] md:text-xs font-mono font-bold text-black">
                         <span className="flex items-center bg-[#5ce1e6] px-2 py-0.5 border border-black shadow-brutalist-sm">
                           <Calendar className="w-3.5 h-3.5 mr-1" />
@@ -66,7 +66,7 @@ export default function Credentials() {
                 <span className="window-dot" />
                 <span className="window-dot" />
               </div>
-              <span>qualifications.db</span>
+              <span>certifications.db</span>
               <div className="w-6" />
             </div>
 

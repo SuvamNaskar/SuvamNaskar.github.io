@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Briefcase, Calendar, ChevronRight, FileDown } from "lucide-react";
 import { experiences } from "../data/portfolio";
 
-const tabNames = ["cloud-backend.sys", "cloud-systems.sys", "iot-research.sys"];
+const tabNames = ["cloud-backend-eng.doc", "cloud-engineer.doc", "iot-intern.doc"];
 
 export default function Experience() {
   const [activeRoleIndex, setActiveRoleIndex] = useState(0);
@@ -14,9 +14,9 @@ export default function Experience() {
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex flex-col mb-16">
-          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 03. Systems Engineering &amp; Technical Experience</span>
+          <span className="font-mono text-xs font-bold text-slate-500 uppercase mb-2">// 02. Professional History</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-black">
-            Technical &amp; Systems Experience
+            Timeline & Roles
           </h2>
           <div className="w-16 h-1.5 bg-black mt-3 rounded-full" />
         </div>
@@ -28,11 +28,10 @@ export default function Experience() {
               <button
                 key={idx}
                 onClick={() => setActiveRoleIndex(idx)}
-                className={`flex-none text-left px-5 py-3 border-2 border-black font-mono text-xs md:text-sm tracking-wide transition-all duration-100 uppercase font-bold shadow-brutalist-sm ${
-                  activeRoleIndex === idx
-                    ? "bg-black text-white translate-x-[1px] translate-y-[1px] shadow-none"
-                    : "bg-white text-black hover:bg-slate-50"
-                }`}
+                className={`flex-none text-left px-5 py-3 border-2 border-black font-mono text-xs md:text-sm tracking-wide transition-all duration-100 uppercase font-bold shadow-brutalist-sm ${activeRoleIndex === idx
+                  ? "bg-black text-white translate-x-[1px] translate-y-[1px] shadow-none"
+                  : "bg-white text-black hover:bg-slate-50"
+                  }`}
               >
                 📁 {tabNames[idx] || "role.doc"}
               </button>
