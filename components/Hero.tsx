@@ -54,63 +54,93 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Illustration */}
+        {/* Right Terminal Window */}
         <div className="md:col-span-5 flex justify-center items-center">
-          <div className="relative p-6 bg-white border-2.5 border-black shadow-brutalist rounded-xl group select-none">
-            <svg
-              viewBox="0 0 200 200"
-              className="w-48 h-48 md:w-64 md:h-64 text-black group-hover:rotate-1 transition-transform duration-200"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-            >
-              {/* Cloud Outline in center-top */}
-              <path
-                d="M 60 60 C 50 60, 42 68, 42 78 C 42 88, 50 96, 62 96 H 138 C 148 96, 156 88, 156 78 C 156 68, 148 60, 138 60 C 132 45, 110 40, 96 50 C 85 42, 68 45, 60 60 Z"
-                fill="white"
-                stroke="black"
-                strokeWidth="2.5"
-              />
+          <div className="w-full max-w-md brutalist-card overflow-hidden bg-white shadow-brutalist-lg select-none hover:-translate-y-1 transition-transform duration-200">
+            {/* Vintage Mac OS Window Title Bar */}
+            <div className="bg-[#e8e8e8] border-b-2.5 border-black px-4 py-2.5 flex items-center justify-between font-mono text-[11px] font-bold text-black">
+              <div className="flex items-center space-x-1.5">
+                <span className="window-dot" />
+                <span className="window-dot" />
+              </div>
+              <span className="tracking-wide">academic-station.term</span>
+              <div className="flex items-center space-x-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
+                <span className="text-[10px] text-slate-700">ONLINE</span>
+              </div>
+            </div>
 
-              {/* Network Link Lines going down */}
-              <path d="M 75 96 L 75 125 L 55 125" stroke="black" strokeWidth="2.5" strokeLinecap="round" />
-              <path d="M 125 96 L 125 125 L 145 125" stroke="black" strokeWidth="2.5" strokeLinecap="round" />
-              <line x1="100" y1="96" x2="100" y2="125" stroke="black" strokeWidth="2.5" />
+            {/* Retro CRT Terminal Screen Body */}
+            <div className="bg-[#121314] text-slate-200 p-5 font-mono text-[11px] md:text-xs leading-relaxed space-y-3.5 relative overflow-hidden">
+              {/* Subtle Scanline Texture effect */}
+              <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(18,19,20,0)_50%,rgba(0,0,0,0.3)_50%)] bg-[length:100%_4px] opacity-40" />
 
-              {/* Data packet boxes on link lines */}
-              <rect x="71" y="105" width="8" height="8" rx="1" fill="black" />
-              <rect x="121" y="110" width="8" height="8" rx="1" fill="black" />
+              {/* Block 1: Academic Identity Query */}
+              <div className="relative z-10 space-y-1">
+                <div className="flex items-center text-[#ffde59]">
+                  <span className="text-slate-400 mr-2">suvam@rkmvcc:~$</span>
+                  <span>whoami --academic</span>
+                </div>
+                <div className="pl-3 border-l-2 border-slate-700 text-slate-300 space-y-0.5 text-[11px]">
+                  <div><span className="text-slate-500">SCHOLAR:</span> Suvam Naskar</div>
+                  <div><span className="text-slate-500">DEGREE:</span> M.Sc. in Computer Science</div>
+                  <div><span className="text-slate-500">COLLEGE:</span> RKMVCC, Kolkata</div>
+                </div>
+              </div>
 
-              {/* Left Node: Database Cylinder */}
-              <g transform="translate(10, 120)">
-                <rect x="5" y="10" width="30" height="35" rx="3" fill="white" stroke="black" strokeWidth="2.5" />
-                <path d="M 5 20 C 5 25, 35 25, 35 20" stroke="black" strokeWidth="2.5" />
-                <path d="M 5 30 C 5 35, 35 35, 35 30" stroke="black" strokeWidth="2.5" />
-                <path d="M 5 10 C 5 15, 35 15, 35 10" stroke="black" strokeWidth="2.5" fill="white" />
-              </g>
+              {/* Block 2: Qualifications & Honors */}
+              <div className="relative z-10 space-y-1">
+                <div className="flex items-center text-[#5ce1e6]">
+                  <span className="text-slate-400 mr-2">suvam@rkmvcc:~$</span>
+                  <span>cat qualifications.rec</span>
+                </div>
+                <div className="pl-3 border-l-2 border-[#5ce1e6]/40 space-y-1 text-[11px]">
+                  <div className="flex items-center space-x-2">
+                    <span className="bg-[#ffe680] text-black font-bold px-1.5 py-0.5 text-[10px] uppercase">UGC NET</span>
+                    <span className="text-emerald-400 font-bold">Qualified (LS / AP)</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="bg-[#5ce1e6] text-black font-bold px-1.5 py-0.5 text-[10px] uppercase">AWS</span>
+                    <span className="text-slate-300">Certified Cloud Practitioner</span>
+                  </div>
+                </div>
+              </div>
 
-              {/* Center Node: Server Stack Console */}
-              <g transform="translate(80, 120)">
-                <rect x="10" y="5" width="20" height="40" rx="2" fill="white" stroke="black" strokeWidth="2.5" />
-                <line x1="13" y1="12" x2="27" y2="12" stroke="black" strokeWidth="2.2" />
-                <line x1="13" y1="20" x2="27" y2="20" stroke="black" strokeWidth="2.2" />
-                <line x1="13" y1="28" x2="27" y2="28" stroke="black" strokeWidth="2.2" />
-                <circle cx="15" cy="38" r="1.5" fill="black" />
-                <circle cx="20" cy="38" r="1.5" fill="black" />
-                <circle cx="25" cy="38" r="1.5" fill="black" />
-              </g>
+              {/* Block 3: Research Telemetry Stream */}
+              <div className="relative z-10 space-y-1">
+                <div className="flex items-center text-emerald-400">
+                  <span className="text-slate-400 mr-2">suvam@rkmvcc:~$</span>
+                  <span>telemetry --stream</span>
+                </div>
+                <div className="pl-3 border-l-2 border-emerald-500/40 text-[10px] text-slate-300 space-y-0.5">
+                  <div className="flex items-center justify-between">
+                    <span>[RSTC-IoT] Sensor Array</span>
+                    <span className="text-emerald-400 font-bold">● ACTIVE</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>[WireGuard] Mesh Tunnel</span>
+                    <span className="text-emerald-400 font-bold">● 0ms LATENCY</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>[Upasthiti] Campus Geo</span>
+                    <span className="text-emerald-400 font-bold">● 25m BOUND</span>
+                  </div>
+                </div>
+              </div>
 
-              {/* Right Node: Client Terminal Monitor */}
-              <g transform="translate(145, 120)">
-                <rect x="5" y="10" width="35" height="25" rx="2" fill="white" stroke="black" strokeWidth="2.5" />
-                <rect x="8" y="13" width="29" height="19" fill="#e8e8e8" stroke="black" strokeWidth="1.5" />
-                <line x1="11" y1="18" x2="22" y2="18" stroke="black" strokeWidth="2" strokeLinecap="round" />
-                <line x1="11" y1="23" x2="17" y2="23" stroke="black" strokeWidth="2" strokeLinecap="round" />
-                <path d="M 18 35 L 27 35" stroke="black" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="22.5" y1="35" x2="22.5" y2="38" stroke="black" strokeWidth="2.5" />
-                <line x1="15" y1="38" x2="30" y2="38" stroke="black" strokeWidth="2.5" strokeLinecap="round" />
-              </g>
-            </svg>
+              {/* Interactive / Blinking Cursor Prompt */}
+              <div className="relative z-10 pt-1 flex items-center text-slate-400 text-xs">
+                <span className="mr-2">rkmvcc-lab:~$</span>
+                <span className="text-white">ready</span>
+                <span className="w-2 h-4 bg-[#ffde59] ml-1 animate-pulse" />
+              </div>
+            </div>
+
+            {/* Vintage Window Bottom Status Bar */}
+            <div className="bg-[#e8e8e8] border-t-2.5 border-black px-4 py-2 flex items-center justify-between font-mono text-[10px] font-bold text-slate-700">
+              <span>MEM: 64MB // OS: RETRO-MAC</span>
+              <span className="text-black bg-[#ffde59] px-1.5 py-0.5 border border-black uppercase">TTY1 // UTF-8</span>
+            </div>
           </div>
         </div>
 
