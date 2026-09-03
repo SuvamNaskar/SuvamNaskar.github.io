@@ -3,6 +3,7 @@
 import React from "react";
 import { ArrowUpRight, Github, Linkedin, Mail, FileText } from "lucide-react";
 import { personalInfo } from "../data/portfolio";
+import HeroTerminal from "./HeroTerminal";
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
@@ -56,92 +57,7 @@ export default function Hero() {
 
         {/* Right Terminal Window */}
         <div className="md:col-span-5 flex justify-center items-center">
-          <div className="w-full max-w-md brutalist-card overflow-hidden bg-white shadow-brutalist-lg select-none hover:-translate-y-1 transition-transform duration-200">
-            {/* Vintage Mac OS Window Title Bar */}
-            <div className="bg-[#e8e8e8] border-b-2.5 border-black px-4 py-2.5 flex items-center justify-between font-mono text-[11px] font-bold text-black">
-              <div className="flex items-center space-x-1.5">
-                <span className="window-dot" />
-                <span className="window-dot" />
-              </div>
-              <span className="tracking-wide">academic-station.term</span>
-              <div className="flex items-center space-x-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
-                <span className="text-[10px] text-slate-700">ONLINE</span>
-              </div>
-            </div>
-
-            {/* Retro CRT Terminal Screen Body */}
-            <div className="bg-[#121314] text-slate-200 p-5 font-mono text-[11px] md:text-xs leading-relaxed space-y-3.5 relative overflow-hidden">
-              {/* Subtle Scanline Texture effect */}
-              <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(18,19,20,0)_50%,rgba(0,0,0,0.3)_50%)] bg-[length:100%_4px] opacity-40" />
-
-              {/* Block 1: Academic Identity Query */}
-              <div className="relative z-10 space-y-1">
-                <div className="flex items-center text-[#ffde59]">
-                  <span className="text-slate-400 mr-2">suvam@rkmvcc:~$</span>
-                  <span>whoami --academic</span>
-                </div>
-                <div className="pl-3 border-l-2 border-slate-700 text-slate-300 space-y-0.5 text-[11px]">
-                  <div><span className="text-slate-500">SCHOLAR:</span> Suvam Naskar</div>
-                  <div><span className="text-slate-500">DEGREE:</span> M.Sc. in Computer Science</div>
-                  <div><span className="text-slate-500">COLLEGE:</span> RKMVCC, Kolkata</div>
-                </div>
-              </div>
-
-              {/* Block 2: Qualifications & Honors */}
-              <div className="relative z-10 space-y-1">
-                <div className="flex items-center text-[#5ce1e6]">
-                  <span className="text-slate-400 mr-2">suvam@rkmvcc:~$</span>
-                  <span>cat qualifications.rec</span>
-                </div>
-                <div className="pl-3 border-l-2 border-[#5ce1e6]/40 space-y-1 text-[11px]">
-                  <div className="flex items-center space-x-2">
-                    <span className="bg-[#ffe680] text-black font-bold px-1.5 py-0.5 text-[10px] uppercase">UGC NET</span>
-                    <span className="text-emerald-400 font-bold">Qualified (LS / AP)</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="bg-[#5ce1e6] text-black font-bold px-1.5 py-0.5 text-[10px] uppercase">AWS</span>
-                    <span className="text-slate-300">Certified Cloud Practitioner</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Block 3: Research Telemetry Stream */}
-              <div className="relative z-10 space-y-1">
-                <div className="flex items-center text-emerald-400">
-                  <span className="text-slate-400 mr-2">suvam@rkmvcc:~$</span>
-                  <span>telemetry --stream</span>
-                </div>
-                <div className="pl-3 border-l-2 border-emerald-500/40 text-[10px] text-slate-300 space-y-0.5">
-                  <div className="flex items-center justify-between">
-                    <span>[RSTC-IoT] Sensor Array</span>
-                    <span className="text-emerald-400 font-bold">● ACTIVE</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>[WireGuard] Mesh Tunnel</span>
-                    <span className="text-emerald-400 font-bold">● 0ms LATENCY</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>[Upasthiti] Campus Geo</span>
-                    <span className="text-emerald-400 font-bold">● 25m BOUND</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Interactive / Blinking Cursor Prompt */}
-              <div className="relative z-10 pt-1 flex items-center text-slate-400 text-xs">
-                <span className="mr-2">rkmvcc-lab:~$</span>
-                <span className="text-white">ready</span>
-                <span className="w-2 h-4 bg-[#ffde59] ml-1 animate-pulse" />
-              </div>
-            </div>
-
-            {/* Vintage Window Bottom Status Bar */}
-            <div className="bg-[#e8e8e8] border-t-2.5 border-black px-4 py-2 flex items-center justify-between font-mono text-[10px] font-bold text-slate-700">
-              <span>MEM: 64MB // OS: RETRO-MAC</span>
-              <span className="text-black bg-[#ffde59] px-1.5 py-0.5 border border-black uppercase">TTY1 // UTF-8</span>
-            </div>
-          </div>
+          <HeroTerminal />
         </div>
 
         {/* Quick Links Footer Grid */}
